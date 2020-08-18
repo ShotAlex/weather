@@ -1,0 +1,80 @@
+.footer {
+  background-color: rgb(70, 70, 70);
+  border-radius: 0px 0px 12px 12px;
+
+
+  &-inner {
+    padding: 20px;
+      color: rgb(155, 155, 155);
+      font-family: monospace;
+      font-size: calc(4px + 1vmin);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    &__logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+      }
+      span {
+        padding: 0 12px;
+      }
+    }
+
+    &__text {}
+
+    &__links {
+      a {
+        margin: 5px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          border: 1px solid rgba(0,0,0,0);
+        }
+        
+        img:hover {
+          transform: scale(1.04);
+          transform: rotate(12deg);
+          transition: .4s;
+          border: 1px solid rgb(161, 161, 161);
+        }
+      }
+    }
+  }
+
+  &__copy {
+    border-top: 1px solid rgb(105, 105, 105);
+    padding: 4px;
+    text-align: center;
+    color: rgb(117, 116, 116);
+  }
+}
+
+// STICKY DOWN FOOTER
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%;
+// }
+
+// .content {
+//   flex: 1 0 auto;
+// }
+
+// .footer {
+//   flex: 0 0 auto;
+// }

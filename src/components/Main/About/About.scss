@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  
+  &__img {
+    display: flex;
+    img {
+      // width: 100%;
+    }
+  }
+
+
+  &__text {
+    text-align: center;
+    font-family: monospace;
+    font-size: calc(4px + 1vmin);
+    // max-width: 700px;
+    
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .about {
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+      width: 100%;
+    }
+  }
+}

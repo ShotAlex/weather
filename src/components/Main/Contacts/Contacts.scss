@@ -1,0 +1,136 @@
+#map {
+    max-width: 600px;
+    height: 400px; //
+    background-color: rgb(215, 225, 255);
+    overflow: hidden;
+
+    div {
+        // position:  relative !important;
+        width: 100% !important;
+        // height: 400px !important;
+        div {
+
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+
+    &__map {}
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        overflow: hidden;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            justify-content: space-around;
+
+            input {
+                padding: 6px;
+                outline: none;
+                margin-bottom: 6px;
+                // max-width: 600px;
+                width: 100%;
+                border: none;
+                border-left: 4px solid rgba(28, 110, 164, 0.33);
+                background-color: rgba(0, 26, 255, 0.02);
+            }
+
+            textarea {
+                margin-bottom: 6px;
+                padding: 6px;
+                // max-width: 600px;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-left: 4px solid rgba(28, 110, 164, 0.33);
+                background-color: rgba(0, 26, 255, 0.02);
+                resize: none;
+
+            }
+
+            button {
+                padding: 6px;
+                // max-width: 600px;
+                width: 103.4%;
+                background-color: #7bb4ff;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .contactsData {
+            position: absolute;
+            top: 0px;
+            right: 60px;
+            height: calc(100% - 40px);
+            // vertical-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.88);
+
+            &-tel,
+            &-mail {
+                padding: 20px 0px;
+                display: flex;
+                align-items: center;
+                
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 20px;
+                }
+                
+                a {
+                    color: #222;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        display: block;
+        text-align: center;
+
+        .contactsData {
+            right: 0;
+            margin: 0 auto;
+            position: relative;
+            padding: 0;
+            text-align: center;
+            img {
+                margin-right: 8px;
+                width: 20px;
+            }
+            
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 400px) {
+        .contactsData {
+            img {
+                margin-right: 8px;
+                width: 20px;
+            }
+    
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
